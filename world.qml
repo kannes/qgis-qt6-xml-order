@@ -86,7 +86,7 @@
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="101,64,109,255,rgb:0.39494925737380981,0.25209429860115051,0.42856487631797791,1"/>
+            <Option name="outline_color" type="QString" value="101,64,109,255,rgb:0.3960784375667572,0.25098040699958801,0.42745098471641541,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.2"/>
             <Option name="outline_width_unit" type="QString" value="MM"/>
@@ -122,7 +122,7 @@
             <Option name="offset" type="QString" value="0,0"/>
             <Option name="offset_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
             <Option name="offset_unit" type="QString" value="MM"/>
-            <Option name="outline_color" type="QString" value="101,64,109,255,rgb:0.39494925737380981,0.25209429860115051,0.42856487631797791,1"/>
+            <Option name="outline_color" type="QString" value="101,64,109,255,rgb:0.3960784375667572,0.25098040699958801,0.42745098471641541,1"/>
             <Option name="outline_style" type="QString" value="solid"/>
             <Option name="outline_width" type="QString" value="0.2"/>
             <Option name="outline_width_map_unit_scale" type="QString" value="3x:0,0,0,0,0,0"/>
@@ -237,7 +237,7 @@
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
     <DiagramCategory backgroundAlpha="255" backgroundColor="#ffffff" barWidth="5" diagramOrientation="Up" direction="1" enabled="0" height="15" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" maxScaleDenominator="1e+08" minScaleDenominator="0" minimumSize="0" opacity="1" penAlpha="255" penColor="#000000" penWidth="0" rotationOffset="270" scaleBasedVisibility="0" scaleDependency="Area" showAxis="0" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" spacing="0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" width="15">
-      <fontProperties bold="0" description="Cantarell,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1" italic="0" strikethrough="0" style="" underline="0"/>
+      <fontProperties bold="0" description="MS Shell Dlg 2,8.25,-1,5,400,0,0,0,0,0,0,0,0,0,0,1" italic="0" strikethrough="0" style="" underline="0"/>
       <attribute color="#000000" colorOpacity="1" field="" label=""/>
       <axisSymbol>
         <symbol alpha="1" clip_to_extent="1" force_rhr="0" frame_rate="10" is_animated="0" name="" type="line">
@@ -301,7 +301,13 @@
   </DiagramLayerSettings>
   <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
     <activeChecks/>
-    <checkConfiguration/>
+    <checkConfiguration type="Map">
+      <Option name="QgsGeometryGapCheck" type="Map">
+        <Option name="allowedGapsBuffer" type="double" value="0"/>
+        <Option name="allowedGapsEnabled" type="bool" value="false"/>
+        <Option name="allowedGapsLayer" type="QString" value=""/>
+      </Option>
+    </checkConfiguration>
   </geometryOptions>
   <legend showLabelLegend="0" type="default-vector"/>
   <referencedLayers/>
